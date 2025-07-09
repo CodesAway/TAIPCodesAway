@@ -110,9 +110,16 @@ def install_item_git(git_pathname: str, clone_command: str, url: str) -> bool:
         text=True,
     )
 
-    # Access the captured output
-    print("Standard Output:")
-    print(result.stdout)
+    if result.returncode:
+        print(f"Unable to install: {clone_command} -> {url}")
+
+    if result.stdout:
+        print("Standard Output:")
+        print(result.stdout)
+
+    if result.stderr:
+        print("Standard Error:")
+        print(result.stderr)
 
     return not result.returncode
 
@@ -131,9 +138,16 @@ def install_item_vscode(vscode_pathname: str, unique_identifier: str, url: str) 
         text=True,
     )
 
-    # Access the captured output
-    print("Standard Output:")
-    print(result.stdout)
+    if result.returncode:
+        print(f"Unable to install: {unique_identifier} -> {url}")
+
+    if result.stdout:
+        print("Standard Output:")
+        print(result.stdout)
+
+    if result.stderr:
+        print("Standard Error:")
+        print(result.stderr)
 
     if "is already installed." in result.stdout:
         return False
