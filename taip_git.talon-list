@@ -1,0 +1,34 @@
+list: user.taip_git
+-
+
+# Format:
+# Clone command (key): URL (value)
+
+# Use special key "program_pathname" to specify pathname for Git
+# (otherwise use default "git" and presume part of systemp path)
+program_pathname: %UserProfile%\Downloads\PortableGit\bin\git.exe
+
+community: https://github.com/talonhub/community
+
+# CodesAway main Talon Voice repo
+TalonVoiceCodesAway: https://github.com/CodesAway/TalonVoiceCodesAway
+
+# Note: below folder names use underscore instead of default hyphen - allows importing types within Python code, when desired
+
+# https://github.com/talonhub/community
+
+## Cursorless (such as if using VSCode)
+cursorless_talon: https://github.com/cursorless-dev/cursorless-talon
+
+## Rango requires browser extension as well - https://github.com/david-tejada/rango?tab=readme-ov-file#installation
+rango_talon: https://github.com/david-tejada/rango-talon
+
+## gaze-ocr (If using Talon Voice Beta, comment out below line and uncomment second line instead
+talon_gaze_ocr: https://github.com/wolfmanstout/talon-gaze-ocr
+# -b beta talon_gaze_ocr: https://github.com/wolfmanstout/talon-gaze-ocr
+
+## AXKit (macOS only)
+# talon_axkit : https://github.com/phillco/talon-axkit
+
+# Other user file sets - https://talon.wiki/talon_user_file_sets
+talon_hud: https://github.com/chaosparrot/talon_hud

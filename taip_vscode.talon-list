@@ -1,0 +1,24 @@
+list: user.taip_vscode
+-
+
+# Format:
+# Unique Identifier (key): URL (value)
+
+# Use special key "program_pathname" to specify pathname for VSCode
+# (otherwise use default "code" and presume part of systemp path)
+# program_pathname: %LocalAppData%\Programs\Microsoft VS Code\Code.exe
+
+# Cursorless (https://www.cursorless.org/docs/user/installation)
+pokey.talon: https://marketplace.visualstudio.com/items?itemName=pokey.talon
+pokey.cursorless: https://marketplace.visualstudio.com/items?itemName=pokey.cursorless
+
+# Other useful Talon related extensions
+AndreasArvidsson.andreas-talon: https://marketplace.visualstudio.com/items?itemName=AndreasArvidsson.andreas-talon
+mrob95.vscode-talonscript: https://marketplace.visualstudio.com/items?itemName=mrob95.vscode-talonscript
+
+# Python related extensions
+ms-python.python: https://marketplace.visualstudio.com/items?itemName=ms-python.python
+## https://code.visualstudio.com/docs/python/formatting
+charliermarsh.ruff: https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
+
+# Other useful VSCode extensions
