@@ -84,5 +84,3 @@ TODO: I presume I can do this via voice...
 
 1. Right click on extension icon
 2. Click **Keyboard Clicking**
-
-<a target="_blank" rel="noopener noreferrer" href="https://google.com">Link</a>
