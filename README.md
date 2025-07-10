@@ -85,5 +85,4 @@ TODO: I presume I can do this via voice...
 1. Right click on extension icon
 2. Click **Keyboard Clicking**
 
-<a href="http://google.com/" target="_blank">Hello, google!</a>
-
+[test](https://google.com){:target="_blank" rel="noopener"}
