@@ -129,6 +129,9 @@ def install_item_vscode(vscode_pathname: str, unique_identifier: str, url: str) 
     if not validate_item_vscode(unique_identifier):
         return False
 
+    if unique_identifier.lower() == "pokey.cursorless":
+        workaround_missing_vscode_settings_file()
+
     command_list = [vscode_pathname, "--install-extension", unique_identifier]
 
     result = subprocess.run(
@@ -153,6 +156,27 @@ def install_item_vscode(vscode_pathname: str, unique_identifier: str, url: str) 
         return False
 
     return not result.returncode
+
+
+def workaround_missing_vscode_settings_file():
+    # Workaround for https://github.com/cursorless-dev/cursorless/issues/3030
+
+    # TODO: for now, only handle Windows VSCode, since this is the only one I can confirm has an issue (handle others as needed)
+    # Reference: https://github.com/cursorless-dev/cursorless/blob/main/cursorless-talon/src/apps/vscode_settings.py
+
+    if app.platform != "windows":
+        return
+
+    settings_directory = os.path.expandvars(r"%APPDATA%\Code\User")
+    settings_json_pathname = os.path.join(settings_directory, "settings.json")
+
+    if os.path.exists(settings_json_pathname):
+        return
+
+    if os.path.isdir(settings_directory):
+        # Since settings.json doesn't exist, create file with empty braces
+        with open(settings_json_pathname, "w") as file:
+            file.write("{}")
 
 
 def print_latest():
