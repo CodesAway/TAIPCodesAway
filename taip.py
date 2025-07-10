@@ -215,6 +215,14 @@ def taip_handle_items(install: bool = True, latest: bool = True):
     ]
 
     anything_installed = False
+
+    action = "Install" if install else "Print"
+    if latest:
+        action += " latest"
+
+    if install:
+        app.notify(f"TAIP - {action} items")
+
     for handle_items in handle_items_list:
         talon_list, default_command, verify_valid, install_item, print_item = (
             handle_items
@@ -241,10 +249,6 @@ def taip_handle_items(install: bool = True, latest: bool = True):
             )
             continue
 
-        action = "Install" if install else "Print"
-        if latest:
-            action += " latest"
-
         print(f"{action} {talon_list} items...\n{program_pathname=}")
 
         if latest:
@@ -255,7 +259,12 @@ def taip_handle_items(install: bool = True, latest: bool = True):
                 if existing_value is None:
                     continue
 
-                print(f"Skipping `{key}` (previously installed)")
+                # TODO: Is this helpful? Should I move this up (don't want to clutter logs, so user can see latest stuff added)
+                # print(f"Skipping `{key}` (previously installed)")
+
+        if not taip_items:
+            print("There are no items to process")
+            continue
 
         for key, value in taip_items.items():
             if install:
