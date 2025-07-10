@@ -1,6 +1,6 @@
 # TAIP - Talon Automated Installation Platform
 
-![TAIP - Talon Automated Installation Platform](https://github.com/user-attachments/assets/14fab9f1-ca53-4de5-b663-ffabf4132240)
+<img src="https://github.com/user-attachments/assets/14fab9f1-ca53-4de5-b663-ffabf4132240" alt="Letters T A I P looking like torn tape with a piece of tape across the letters A and I" width="25%">
 
 ## GOAL!!!
 
