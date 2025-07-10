@@ -23,7 +23,7 @@ I've included links to install on Mac or Linux. I don't have a Mac or Linux comp
 4. Optionally, check **Add "Open with Code" action to Windows Explorer** options
 5. Install!
 
-### Install git
+### Install `git`
 
 **Note**: TAIP will use `git` to install the various Talon command sets, which are what define the grammar for the voice commands.
 
