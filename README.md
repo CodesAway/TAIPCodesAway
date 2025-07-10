@@ -8,7 +8,7 @@ The tool doesn't use AI (just the image)
 
 My goal with TAIP (pronounced "tape") is to facilitate setting up voice control for non-technical and technical audiences alike.
 
-**Note**: The below setup steps are what I use for a 100% admin-free Windows install of Talon, Git, VSCode, and the wonderful world of voice control.
+**Note**: The below setup steps are what I use for a 100% admin-free Windows install of Talon, `git`, VSCode, and the wonderful world of voice control.
 
 I've included links to install on Mac or Linux. I don't have a Mac or Linux computer, so please submit an issue if TAIP isn't working for you!
 
@@ -24,15 +24,15 @@ I've included links to install on Mac or Linux. I don't have a Mac or Linux comp
 4. Optionally, check **Add "Open with Code" action to Windows Explorer** options
 5. Install!
 
-### Install Git
+### Install git
 
-**Note**: TAIP will use Git to install the various Talon command sets, which are what define the grammar for the voice commands.
+**Note**: TAIP will use `git` to install the various Talon command sets, which are what define the grammar for the voice commands.
 
 1. Open https://git-scm.com/downloads
 2. Download (standalone installer) and run the installer
 3. Use default install directory `%LocalAppData%\Programs\Git`
 4. Install default selection of components
-5. Chose the default editor for Git (I select Notepad since no external dependencies; I've never had to use this for Git though)
+5. Chose the default editor for `git` (I select Notepad since no external dependencies; I've never had to use this for `git` though)
 6. Override the default branch name for new repositories (suggest using the default **main**)
 7. Use default options for the rest and let it install
 
