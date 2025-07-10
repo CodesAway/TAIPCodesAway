@@ -1,0 +1,86 @@
+# TAIP - Talon Automated Installation Platform
+
+![TAIP - Talon Automated Installation Platform](https://github.com/user-attachments/assets/14fab9f1-ca53-4de5-b663-ffabf4132240)
+
+## GOAL!!!
+
+My goal with this project is to facilitate setting up voice control for non-technical and technical audiences alike.
+
+**Note**: The below setup steps are what I use for a 100% admin-free Windows install of Talon, Git, VSCode, and the wonderful world of voice control.
+
+I've included links to install on Mac or Linux. I don't have a Mac or Linux computer, so please submit an issue if TAIP isn't working for you!
+
+## Installation
+
+### (Optionally) Install VSCode
+
+**Note**: VSCode combined with Cursorless and the various Talon related extensions make it enjoyable to create your own custom grammar (no coding required). TAIP is able to install VSCode extensions for you!
+
+1. Open https://code.visualstudio.com/download
+2. Click **User Installer x64**
+3. Use default install directory `%LocalAppData%\Programs\Microsoft VS Code`
+4. Optionally, check **Add "Open with Code" action to Windows Explorer** options
+5. Install!
+
+### Install Git
+
+**Note**: TAIP will use Git to install the various Talon command sets, which are what define the grammar for the voice commands.
+
+1. Open https://git-scm.com/downloads
+2. Download (standalone installer) and run the installer
+3. Use default install directory `%LocalAppData%\Programs\Git`
+4. Install default selection of components
+5. Chose the default editor for Git (I select Notepad since no external dependencies; I've never had to use this for Git though)
+6. Override the default branch name for new repositories (suggest using the default **main**)
+7. Use default options for the rest and let it install
+
+### Install Talon
+
+**Note**: The portable zip doesn't require admin, whereas the **Download for Windows** exe currently does.
+
+1. Open https://talonvoice.com
+2. Click **Windows (portable zip)**
+3. Extract to a folder of your choice
+4. Run **talon.exe**
+5. Accept the EULA
+6. Talon lives in the system tray
+7. Optionally, right click the icon and check **Start on Login**
+8. Right click the icon, under **Speech Recognition**, install the latest speech engine (this is used to recognize your voice commands locally)
+
+### Install TAIP
+
+#### Windows
+Open a command prompt, paste the following command, and press `Enter` to install `TAIP` using `git`.
+
+```shell
+git clone https://github.com/CodesAway/TAIPCodesAway %AppData%\Talon\user\TAIPCodesAway
+```
+
+#### Linux & Mac
+
+Open a terminal, paste the following command, and press `Enter`/`Return` to install `TAIP` using `git`.
+
+```shell
+git clone https://github.com/CodesAway/TAIPCodesAway ~/.talon/user/TAIPCodesAway
+```
+
+### Install Talon community command set and other items using TAIP
+
+TODO: add voice commands to allow customizing the lists (like can customize alphabet)
+
+## (Optionally) Install Rango extension
+
+**Note**: Rango is a cross browser extension that helps you interact with web pages using your voice and Talon
+
+**Reference**: https://github.com/david-tejada/rango?tab=readme-ov-file#installation
+
+Chrome extension
+https://chromewebstore.google.com/detail/rango/lnemjdnjjofijemhdogofbpcedhgcpmb
+
+Rango Talon command set is included by default in the files installed using TAIP
+
+TODO: I presume I can do this via voice...
+
+1. Right click on extension icon
+2. Click **Keyboard Clicking**
+
