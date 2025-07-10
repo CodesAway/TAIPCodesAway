@@ -6,7 +6,7 @@ The tool doesn't use AI (just the image)
 
 ## GOAL!!!
 
-My goal with this project is to facilitate setting up voice control for non-technical and technical audiences alike.
+My goal with TAIP (pronounced "tape") is to facilitate setting up voice control for non-technical and technical audiences alike.
 
 **Note**: The below setup steps are what I use for a 100% admin-free Windows install of Talon, Git, VSCode, and the wonderful world of voice control.
 
