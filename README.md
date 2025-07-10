@@ -51,7 +51,7 @@ I've included links to install on Mac or Linux. I don't have a Mac or Linux comp
 ### Install TAIP
 
 #### Windows
-Open a command prompt, paste the following command, and press `Enter` to install `TAIP` using `git`.
+Open a command prompt, paste the following command, and press `Enter` to install TAIP using `git`.
 
 ```shell
 git clone https://github.com/CodesAway/TAIPCodesAway %AppData%\Talon\user\TAIPCodesAway
@@ -59,7 +59,7 @@ git clone https://github.com/CodesAway/TAIPCodesAway %AppData%\Talon\user\TAIPCo
 
 #### Linux & Mac
 
-Open a terminal, paste the following command, and press `Enter`/`Return` to install `TAIP` using `git`.
+Open a terminal, paste the following command, and press `Enter`/`Return` to install TAIP using `git`.
 
 ```shell
 git clone https://github.com/CodesAway/TAIPCodesAway ~/.talon/user/TAIPCodesAway
@@ -84,4 +84,3 @@ TODO: I presume I can do this via voice...
 
 1. Right click on extension icon
 2. Click **Keyboard Clicking**
-
