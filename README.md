@@ -1,7 +1,6 @@
 # TAIP - Talon Automated Installation Platform
 
-![Letters T A I P looking like torn tape with another piece of tape across the letters A and I](https://github.com/user-attachments/assets/526a73eb-09f8-49c9-b73f-408495543804)
-
+![Letters T A I P looking like torn tape with another piece of tape across the letters A and I](https://github.com/user-attachments/assets/526a73eb-09f8-49c9-b73f-408495543804)  
 The tool doesn't use AI (just the image)
 
 ## GOAL!!!
