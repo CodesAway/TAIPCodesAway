@@ -83,10 +83,10 @@ Print and install all items
 
 **Note**: Rango is a cross browser extension that helps you interact with web pages using your voice and Talon
 
-**Reference**: https://github.com/david-tejada/rango?tab=readme-ov-file#installation
-
 Chrome extension
 https://chromewebstore.google.com/detail/rango/lnemjdnjjofijemhdogofbpcedhgcpmb
+
+**Reference**: https://github.com/david-tejada/rango?tab=readme-ov-file#installation
 
 Rango Talon command set is included by default in the files installed using TAIP
 
