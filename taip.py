@@ -204,7 +204,6 @@ def taip_handle_items(install: bool = True, latest: bool = True):
     """
 
     handle_items_list = [
-        ("user.taip_git", "git", verify_valid_git, install_item_git, print_item_git),
         (
             "user.taip_vscode",
             "code",
@@ -212,6 +211,7 @@ def taip_handle_items(install: bool = True, latest: bool = True):
             install_item_vscode,
             print_item_vscode,
         ),
+        ("user.taip_git", "git", verify_valid_git, install_item_git, print_item_git),
     ]
 
     anything_installed = False
