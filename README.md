@@ -13,7 +13,7 @@ I've included links to install on Mac or Linux. I don't have a Mac or Linux comp
 
 ## Installation
 
-### (Optionally) Install VSCode
+### (Suggested) Install VSCode
 
 **Note**: VSCode combined with Cursorless and the various Talon related extensions make it enjoyable to create your own custom grammar (no coding required). TAIP is able to install VSCode extensions for you!
 
@@ -67,9 +67,19 @@ git clone https://github.com/CodesAway/TAIPCodesAway ~/.talon/user/TAIPCodesAway
 
 ### Install Talon community command set and other items using TAIP
 
-TODO: add voice commands to allow customizing the lists (like can customize alphabet)
+Customize which items to install
+* `tape customize git` - edit `taip_git.talon-list`
+* `tape customize code` - edit `taip_vscode.talon-list`
 
-## (Optionally) Install Rango extension
+Print and install latest items (typical commands to use)
+* `tape print latest` - print latest items to Talon log (useful before installing to verify what will be installed)
+* `tape install latest` - install latest items
+
+Print and install all items
+* `tape print all` - print all items to Talon log
+* `tap install all` - install all items (will skip stuff already installed)
+
+## (Suggested) Install Rango extension
 
 **Note**: Rango is a cross browser extension that helps you interact with web pages using your voice and Talon
 
@@ -80,7 +90,21 @@ https://chromewebstore.google.com/detail/rango/lnemjdnjjofijemhdogofbpcedhgcpmb
 
 Rango Talon command set is included by default in the files installed using TAIP
 
-TODO: I presume I can do this via voice...
-
+Enable keyboard clicking (voice command `keyboard switch`)
 1. Right click on extension icon
 2. Click **Keyboard Clicking**
+
+## Additional resources
+* There is an active community of Talon users on Slack to help you along your voice control journey! (https://talonvoice.com/chat)
+
+* Talon wiki (https://talon.wiki)
+  * Basic usage (https://talon.wiki/Basic%20Usage/basic_usage)
+  * Talon user file set list (https://talon.wiki/integrations/talon_user_file_sets)
+
+* Talon practice (https://chaosparrot.github.io/talon_practice)
+
+* Cursorless (https://www.cursorless.org)
+  * Cursorless documentation (https://www.cursorless.org/docs)
+  * Cursorless cheatsheet (https://www.cursorless.org/cheatsheet)
+
+* Andreas Talon user scripts (https://github.com/AndreasArvidsson/andreas-talon)
