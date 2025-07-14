@@ -252,11 +252,11 @@ def taip_handle_items(install: bool = True, latest: bool = True):
 
         print(f"{action} {talon_list} items...\n{program_pathname=}")
 
-        if latest:
-            # TODO: populate from database storage
-            list_program = talon_list[talon_list.rfind("_") :]
-            storage_key = "taip.latest" + list_program
+        if latest or install:
+            storage_key = "taip.latest" + talon_list[talon_list.rfind("_") :]
             existing_entries: dict[str, str] = storage.get(storage_key, {})
+
+        if latest:
             for key in existing_entries.keys():
                 existing_value = taip_items.pop(key, None)
                 if existing_value is None:
@@ -283,7 +283,7 @@ def taip_handle_items(install: bool = True, latest: bool = True):
             installed_items = True
             existing_entries[key] = value
 
-        if latest and installed_items:
+        if installed_items:
             storage.set(storage_key, existing_entries)
 
     if install:
