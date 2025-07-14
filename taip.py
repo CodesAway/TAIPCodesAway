@@ -8,6 +8,7 @@ from talon import (
     app,  # type: ignore
     cron,  # type: ignore
     registry,
+    storage,
 )
 
 mod = Module()
@@ -253,8 +254,10 @@ def taip_handle_items(install: bool = True, latest: bool = True):
 
         if latest:
             # TODO: populate from database storage
-            existing_keys = set()
-            for key in existing_keys:
+            list_program = talon_list[talon_list.rfind("_") :]
+            storage_key = "taip.latest" + list_program
+            existing_entries: dict[str, str] = storage.get(storage_key, {})
+            for key in existing_entries.keys():
                 existing_value = taip_items.pop(key, None)
                 if existing_value is None:
                     continue
@@ -266,14 +269,22 @@ def taip_handle_items(install: bool = True, latest: bool = True):
             print("There are no items to process")
             continue
 
+        installed_items = False
         for key, value in taip_items.items():
-            if install:
-                installed = install_item(program_pathname, key, value)
-                if installed:
-                    print(f"Installed: {key} -> {value}")
-                    anything_installed = True
-            else:
+            if not install:
                 print_item(key, value)
+                continue
+
+            if not install_item(program_pathname, key, value):
+                continue
+
+            print(f"Installed: {key} -> {value}")
+            anything_installed = True
+            installed_items = True
+            existing_entries[key] = value
+
+        if latest and installed_items:
+            storage.set(storage_key, existing_entries)
 
     if install:
         if anything_installed:
