@@ -9,16 +9,30 @@ list: user.taip_vscode
 # program_pathname: %LocalAppData%\Programs\Microsoft VS Code\Code.exe
 
 # Cursorless (https://www.cursorless.org/docs/user/installation)
-pokey.talon: https://marketplace.visualstudio.com/items?itemName=pokey.talon
-pokey.cursorless: https://marketplace.visualstudio.com/items?itemName=pokey.cursorless
+pokey.talon:                                    https://marketplace.visualstudio.com/items?itemName=pokey.talon
+pokey.cursorless:                               https://marketplace.visualstudio.com/items?itemName=pokey.cursorless
 
 # Other useful Talon related extensions
-AndreasArvidsson.andreas-talon: https://marketplace.visualstudio.com/items?itemName=AndreasArvidsson.andreas-talon
-mrob95.vscode-talonscript: https://marketplace.visualstudio.com/items?itemName=mrob95.vscode-talonscript
+AndreasArvidsson.andreas-talon:                 https://marketplace.visualstudio.com/items?itemName=AndreasArvidsson.andreas-talon
+mrob95.vscode-talonscript:                      https://marketplace.visualstudio.com/items?itemName=mrob95.vscode-talonscript
+paulschaaf.talon-filetree:                      https://marketplace.visualstudio.com/items?itemName=PaulSchaaf.talon-filetree
 
 # Python related extensions
-ms-python.python: https://marketplace.visualstudio.com/items?itemName=ms-python.python
+ms-python.python:                               https://marketplace.visualstudio.com/items?itemName=ms-python.python
 ## https://code.visualstudio.com/docs/python/formatting
-charliermarsh.ruff: https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
+charliermarsh.ruff:                             https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff
 
 # Other useful VSCode extensions
+# ssmi.after-dark:                                https://marketplace.visualstudio.com/items?itemName=ssmi.after-dark
+# sirmspencer.vscode-autohide:                    https://marketplace.visualstudio.com/items?itemName=sirmspencer.vscode-autohide
+# streetsidesoftware.code-spell-checker:          https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
+# huibizhang.codesnap-plus:                       https://marketplace.visualstudio.com/items?itemName=huibizhang.codesnap-plus
+# axmz.color-assist:                              https://marketplace.visualstudio.com/items?itemName=axmz.color-assist
+# kevinghadyani.vscode-colormate:                 https://marketplace.visualstudio.com/items?itemName=KevinGhadyani.vscode-colormate
+# eamodio.gitlens:                                https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens
+# oderwat.indent-rainbow:                         https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow
+# yzhang.markdown-all-in-one:                     https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one
+# ryu1kn.partial-diff:                            https://marketplace.visualstudio.com/items?itemName=ryu1kn.partial-diff
+# semanticdiff.semanticdiff:                      https://marketplace.visualstudio.com/items?itemName=semanticdiff.semanticdiff
+# ryu1kn.text-marker:                             https://marketplace.visualstudio.com/items?itemName=ryu1kn.text-marker
+# bierner.speech:                                 https://marketplace.visualstudio.com/items?itemName=bierner.speech

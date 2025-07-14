@@ -11,7 +11,7 @@ list: user.taip_git
 community:                                      https://github.com/talonhub/community
 
 # CodesAway main Talon Voice repo
-# TalonVoiceCodesAway:                            https://github.com/CodesAway/TalonVoiceCodesAway
+TalonVoiceCodesAway:                            https://github.com/CodesAway/TalonVoiceCodesAway
 
 # Note: below folder names use underscore instead of default hyphen - allows importing types within Python code, when desired
 
